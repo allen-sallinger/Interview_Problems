@@ -1,2 +1,2 @@
-# Practice area for compsci fundamentalso
+# Practice area for compsci fundamentals
 
