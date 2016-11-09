@@ -1,3 +1,10 @@
+// Author: Allen Sallinger
+// Date: 20161109
+// Given a string find how many characters must be deleted
+// for the string to have alternating characters.
+// Ex. s0 = aaaa, output = 3
+// Ex. s1 = abab, output = 0
+
 import java.io.*;
 import java.util.*;
 import java.text.*;
@@ -6,6 +13,7 @@ import java.util.regex.*;
 
 public class AlternatingCharacters {
 
+    // Uses recursion and slow string manipulation
     public static int deleteChars(String s){
         int num_deletions = 0;
         for(int i = 0; i < s.length() - 1; i++){
@@ -19,6 +27,7 @@ public class AlternatingCharacters {
 
     }
 
+    // O(n) solution
     public static int fastCount(String s){
         int deleteCounter = 0;
         for(int i = 0; i < s.length() - 1; i++){
